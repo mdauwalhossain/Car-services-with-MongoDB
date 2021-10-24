@@ -8,6 +8,7 @@ import Header from './Pages/Shared/Header/Header';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AddServices from './Pages/AddServices/AddServices';
+import ManageServices from './Pages/ManageServices/ManageServices';
 
 
 
@@ -34,6 +35,10 @@ function App() {
             <Route path="/addServices">
               <AddServices></AddServices>
             </Route>
+            <Route path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>
